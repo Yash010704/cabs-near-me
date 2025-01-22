@@ -40,12 +40,7 @@ This project provides a C++ implementation for identifying nearby cabs based on 
 2. **Read Input**: The program reads the JSON file `customers.json` containing customer locations and details.
 3. **Calculate Distance**: For each customer, the program computes the distance from the fixed coordinates using the Great Circle Distance formula:
    
-   \[ \text{distance} = \text{Earth's Radius} \times \text{central angle} \]
-
-   Central angle is calculated as:
-
-   \[ \cos(\text{central angle}) = \sin(\text{lat1}) \times \sin(\text{lat2}) + \cos(\text{lat1}) \times \cos(\text{lat2}) \times \cos(\text{delta\_lon}) \]
-
+   
 4. **Output Results**: Customers within a 50 km radius are written to the `answer.json` file in the following format:
 
 ```json
